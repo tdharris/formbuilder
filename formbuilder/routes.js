@@ -61,6 +61,16 @@ const BackAndDownloadJSONSchema = (props) => {
   );
 };
 
+const ViewAsJSON = (props) => {
+  return (
+    <div>
+      <Link className="list-group-item" to="/builder/json">
+        <i className="glyphicon glyphicon-fullscreen" /> View as JSON
+      </Link>
+    </div>
+  );
+};
+
 const LinkToHome = () => {
   return (
     <div>
@@ -78,7 +88,7 @@ export default (
       <Route path="faq"
         components={{...common, sidebarComponent: LinkToBuilder, content: FAQ}} />
       <Route path="builder"
-        components={{...common, content: FormContainer}} />
+        components={{...common, sidebarComponent: ViewAsJSON, content: FormContainer}} />
       <Route path="builder/json"
         components={{...common, sidebarComponent: BackAndDownloadJSONSchema, content: JsonViewContainer}} />
       <Route path="builder/published/:adminToken"

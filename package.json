@@ -8,7 +8,7 @@
     "lint": "eslint src test",
     "publish-to-gh-pages": "npm run build:formbuilder-gh && gh-pages --dist build/",
     "publish-to-npm": "npm run dist && npm publish",
-    "start": "node devServer.js",
+    "start": "PORT=9000 HOST=0.0.0.0 node devServer.js",
     "tdd": "npm run test -- -w",
     "test": "SERVER_URL=http://localhost:8888/v1 NODE_ENV=test mocha --compilers js:babel/register --recursive --require ./test/setup-jsdom.js $(find test -name '*_test.js')"
   },

@@ -1,0 +1,13 @@
+#kintoserver:
+#  image: kinto/kinto-server
+#  ports:
+#   - "8888:8888"
+#  volumes:
+#    - ./config:/etc/kinto
+formbuilder:
+  build: ./
+  command: npm run start
+  ports:
+    - "9000:9000"
+#  links:
+#    - kintoserver

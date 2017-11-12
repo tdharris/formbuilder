@@ -25,14 +25,14 @@ export default function FormActions(props) {
         </FieldListDropdown>
       </ButtonToolbar>
       <ButtonGroup className="pull-right">
-        <Button onClick={() => confirm("This action will reset all unsaved changes, Are you sure?") && props.resetForm()}>
+        <Button bsStyle="danger" onClick={() => confirm("This action will reset all unsaved changes, Are you sure?") && props.resetForm()}>
           <i className="glyphicon glyphicon-remove" />
           Reset <span className="hidden-xs">form</span>
         </Button>
-        <Button bsStyle="success" onClick={onClick}>
+        {/* <Button bsStyle="success" onClick={onClick}>
           <i className={`glyphicon glyphicon-${saveIconName}`} />
           Save your form
-        </Button>
+        </Button> */}
       </ButtonGroup>
     </div>
   );
