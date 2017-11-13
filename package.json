@@ -26,6 +26,7 @@
     "json2csv": "^3.7.0",
     "json2xls": "^0.1.2",
     "kinto-http": "^4.3.4",
+    "omit-deep": "^0.3.0",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.3",
     "react-clipboard.js": "^0.2.5",
